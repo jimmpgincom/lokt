@@ -3,6 +3,186 @@
  *
  * By Hakim El Hattab, http://hakim.se
  */
+ .reveal blockquote {
+  display: block;
+  position: relative;
+  margin: 20px auto;
+  width:                              50%;
+  font-size:                          20px;
+  color:                              var(--mpg-white);
+  text-align:                         left;
+  padding:                            5px 12px 5px 12px;
+  background:                         rgba(0, 0, 0, 0.4);
+}
+.reveal blockquote .hashtags {
+  font-size:                          17px;
+  word-spacing:                       8px;
+  color:                              var(--mpg-mediumgray);
+  padding-top:                        26px;
+}
+footer#title-footer {
+  height:                             25px;
+  padding:                            0px;
+  background-position-y:              top;
+}
+.reveal .controls .controls-arrow {
+  color:                              var(--mpg-mediumgray);
+}
+blockquote.clear-back {
+  background:                         rgba(0, 0, 0, 0);
+}
+blockquote.darker-back {
+  background:                         rgba(0, 0, 0, 0.5);
+}
+blockquote.black-back {
+  background:                         rgba(0, 0, 0, 1);
+}
+blockquote.black-text {
+  color:                              var(--mpg-black);
+}
+.highlight {
+  display:                            inline;
+  color:                              var(--mpg-yellow);
+}
+.highlight-blue {
+  color:                              var(--mpg-blue);
+}
+.highlight-red {
+  color:                              var(--mpg-red);
+}
+.logobug {
+  width:                              8%;
+}
+
+.reveal blockquote .hashtags.hashtags-dark {
+  color:                              var(--mpg-darkgray);
+}
+/* 30" CINEMA DISPLAY LANDSCAPE */
+@media only screen and (max-width: 2560px) and (orientation: landscape) {
+  .reveal blockquote {
+    font-size:                        20px;
+    width:                            50%;
+  }
+  .reveal blockquote .hashtags {
+    font-size:                        15px;
+  }
+}
+/* 30" CINEMA DISPLAY PORTRAIT */
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  .reveal blockquote {
+    font-size:                        20px;
+    width:                            50%;
+  }
+  .reveal blockquote .hashtags {
+    font-size:                        15px;
+  }
+}
+/* WIDESCREEN LANDSCAPE */
+@media only screen and (max-width: 1280px) and (orientation: landscape) {
+  .reveal blockquote {
+    font-size:                        22px;
+    width:                            55%;
+  }
+  .reveal blockquote .hashtags {
+    font-size:                        19px;
+  }
+}
+/* WIDESCREEN PORTRAIT */
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+  .reveal blockquote {
+    font-size:                        30px;
+    width:                            80%;
+  }
+  .reveal blockquote .hashtags {
+    font-size:                        26px;
+  }
+}
+/* 17" DISPLAY LANDSCAPE */
+/* TABLET LANDSCAPE */
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .reveal blockquote {
+    font-size:                        22px;
+    width:                            58%;
+  }
+  .reveal blockquote .hashtags {
+    font-size:                        20px;
+  }
+}
+/* 17" DISPLAY PORTRAIT */
+/* TABLET PORTRAIT */
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .reveal blockquote {
+    font-size:                        31px;
+    width:                            78%;
+  }
+  .reveal blockquote .hashtags {
+    font-size:                        27px;
+  }
+}
+/* SMALL TABLET LANDSCAPE */
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+  .reveal blockquote {
+    font-size:                        30px;
+    width:                            75%;
+  }
+  .reveal blockquote .hashtags {
+    font-size:                        26px;
+  }
+}
+/* SMALL TABLET PORTRAIT */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .reveal blockquote {
+    font-size:                        40px;
+    width:                            75%;
+  }
+  .reveal blockquote .hashtags {
+    font-size:                        34px;
+  }
+}
+/* iPHONE 5 LANDSCAPE */
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  .reveal blockquote {
+    font-size:                        48px;
+    width:                            95%
+  }
+  .reveal blockquote .hashtags {
+    font-size:                        43px;
+  }
+}
+/* iPHONE 5 PORTRAIT */
+/* MOBILE PORTRAIT */
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .reveal blockquote {
+    font-size:                        64px;
+    width:                            80%
+  }
+  .reveal blockquote .hashtags {
+    font-size:                        58px;
+  }
+}
+/* MOBILE LANDSCAPE */
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+  .reveal blockquote {
+    font-size:                        50px;
+    width:                            80%;
+  }
+  .reveal blockquote .hashtags {
+    font-size:                        44px;
+  }
+}
+/* CELL N/A */
+@media only screen and (max-width: 240px) {
+  .reveal blockquote {
+    font-size:                        60px;
+    width:                            80%;
+  }
+  .reveal blockquote .hashtags {
+    font-size:                        55px;
+  }
+  footer#title-footer {
+    background-image:                 none;
+  }
+}
 @font-face {
  font-family:                        "San Francisco";
  src:                                url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
@@ -87,23 +267,7 @@ body {
   line-height: 1.3;
   font-weight: inherit; }
 
-.reveal .controls .controls-arrow {
-  color:                              var(--mpg-mediumgray);
-}
-
-.highlight {
-  display:                            inline;
-  color:                              var(--mpg-yellow);
-}
-
-.highlight-blue {
-  color:                              var(--mpg-blue);
-}
-
-.logobug {
-  width:                              8%;
-}
-/*********************************************
+ /*********************************************
  * HEADERS
  *********************************************/
 .reveal h1,
@@ -188,37 +352,6 @@ body {
 
 .reveal dd {
   margin-left: 40px; }
-
-.reveal blockquote {
-  display: block;
-  position: relative;
-  margin: 20px auto;
-  width:                              50%;
-  font-size:                          20px;
-  color:                              var(--mpg-white);
-  text-align:                         left;
-  padding:                            5px 12px 5px 12px;
-  background:                         rgba(0, 0, 0, 0.4);
-}
-
-blockquote.clear-back {
-  background:                         rgba(0, 0, 0, 0);
-}
-
-blockquote.black-back {
-  background:                         rgba(0, 0, 0, 1);
-}
-
-.reveal blockquote .hashtags {
-  font-size:                          17px;
-  word-spacing:                       8px;
-  color:                              var(--mpg-mediumgray);
-  padding-top:                        26px;
-}
-
-.reveal blockquote .hashtags.hashtags-dark {
-  color:                              var(--mpg-darkgray);
-}
 
 .reveal blockquote p:first-child,
 .reveal blockquote p:last-child {
