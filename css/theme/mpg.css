@@ -425,18 +425,23 @@ body {
 /*********************************************
  * LINKS
  *********************************************/
-.reveal a {
+ .reveal a {
   color:                              var(--mpg-darkgray);
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
-  transition: color .15s ease; }
+  transition: color .15s ease; 
+}
+
+.reveal a.blue-link {
+  color:                              var(--mpg-blue);
+}
 
 .reveal blockquote.center {
   text-align:                         center;
 }
 .reveal a:hover {
-  color:                              var(--mpg-red);
+  color:                              var(--mpg-mediumgray);
   text-shadow: none;
   border: none; }
 
