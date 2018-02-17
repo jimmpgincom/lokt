@@ -3,6 +3,56 @@
  *
  * By Hakim El Hattab, http://hakim.se
  */
+* {
+  font-family:                        -apple-system, 
+                                      system-ui,
+                                      BlinkMacSystemFont,
+                                      Segoe UI,
+                                      Roboto,
+                                      Helvetica Neue,
+                                      Fira Sans,
+                                      Ubuntu,
+                                      Oxygen,
+                                      Oxygen Sans,
+                                      Cantarell,
+                                      Droid Sans,
+                                      Lucida Grande,
+                                      Helvetica,
+                                      "San Francicso",
+                                      sans-serif,
+                                      Apple Color Emoji,
+                                      Segoe UI Emoji,
+                                      Segoe UI Emoji,
+                                      Segoe UI Symbol,
+                                      Hiragino Kaku Gothic Pro,
+                                      Meiryo,
+                                      Hiragino Sans GB W3,
+                                      Noto Naskh Arabic,
+                                      Droid Arabic Naskh,
+                                      Geeza Pro,
+                                      Simplified Arabic,
+                                      Noto Sans Thai,
+                                      Thonburi,
+                                      Dokchampa,
+                                      Droid Sans Thai,
+                                      Droid Sans Fallback,
+                                      Heiti SC,
+                                      Microsoft Yahei, 
+                                      "San Francicso";
+  margin:                             0;
+  padding:                            0;
+ }
+ :root {
+  --mpg-white:                       rgb(255, 255, 255);
+  --mpg-black:                       rgb(0, 0, 0);
+  --mpg-red:                         rgb(147, 44, 40);
+  --mpg-yellow:                      rgb(249, 208, 6);
+  --mpg-blue:                        rgb(12, 84, 149);
+  --mpg-gray:                        rgb(239, 239, 239);
+  --mpg-mediumgray:                  rgb(188, 190, 192);
+  --mpg-darkgray:                    rgb(129, 129, 129);
+  --mpg-almostblack:                 rgb(48,48,48);  
+ }
  .reveal blockquote {
   display: block;
   position: relative;
@@ -20,13 +70,29 @@
   color:                              var(--mpg-mediumgray);
   padding-top:                        26px;
 }
+.reveal blockquote.logo {
+  text-align:                         center;
+  font-size:                          200px;
+  font-family:                        'Chathura', sans-serif;
+  font-weight:                        700;
+  color:                              var(--mpg-almostblack);
+  line-height:                        .9;
+}
+.reveal blockquote div.logo-tag {
+  text-align:                         center;
+  font-size:                          18px;
+  font-family:                        'Montserrat', sans-serif;
+  font-weight:                        400;
+  color:                              var(--mpg-almostblack);
+  line-height:                        0;
+}
 footer#title-footer {
   height:                             25px;
   padding:                            0px;
   background-position-y:              top;
 }
 .reveal .controls .controls-arrow {
-  color:                              var(--mpg-mediumgray);
+  color:                              var(--mpg-darkgray);
 }
 blockquote.clear-back {
   background:                         rgba(0, 0, 0, 0);
@@ -96,6 +162,12 @@ blockquote.black-text {
   .reveal blockquote .hashtags {
     font-size:                        26px;
   }
+  .reveal blockquote.logo {
+    font-size:                        260px;
+  }
+  .reveal blockquote div.logo-tag {
+    font-size:                        24px;
+  }
 }
 /* 17" DISPLAY LANDSCAPE */
 /* TABLET LANDSCAPE */
@@ -118,6 +190,12 @@ blockquote.black-text {
   .reveal blockquote .hashtags {
     font-size:                        27px;
   }
+  .reveal blockquote.logo {
+    font-size:                        250px;
+  }
+  .reveal blockquote div.logo-tag {
+    font-size:                        24px;
+  }
 }
 /* SMALL TABLET LANDSCAPE */
 @media only screen and (max-width: 800px) and (orientation: landscape) {
@@ -127,6 +205,9 @@ blockquote.black-text {
   }
   .reveal blockquote .hashtags {
     font-size:                        26px;
+  }
+  .reveal blockquote div.logo-tag {
+    font-size:                        24px;
   }
 }
 /* SMALL TABLET PORTRAIT */
@@ -138,6 +219,12 @@ blockquote.black-text {
   .reveal blockquote .hashtags {
     font-size:                        34px;
   }
+  .reveal blockquote.logo {
+    font-size:                        250px;
+  }
+  .reveal blockquote div.logo-tag {
+    font-size:                        30px;
+  }
 }
 /* iPHONE 5 LANDSCAPE */
 @media only screen and (max-width: 568px) and (orientation: landscape) {
@@ -148,9 +235,15 @@ blockquote.black-text {
   .reveal blockquote .hashtags {
     font-size:                        43px;
   }
+  .reveal blockquote.logo {
+    font-size:                        220px;
+  }
+  .reveal blockquote div.logo-tag {
+    font-size:                        36px;
+  }
 }
 /* iPHONE 5 PORTRAIT */
-/* MOBILE PORTRAIT */
+/* MOBILE PORTRAIT */ 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
   .reveal blockquote {
     font-size:                        64px;
@@ -158,6 +251,13 @@ blockquote.black-text {
   }
   .reveal blockquote .hashtags {
     font-size:                        58px;
+  }
+  .reveal blockquote.logo {
+    font-size:                        300px;
+  }
+  .reveal blockquote div.logo-tag {
+    font-size:                        50px;
+    line-height:                      1.4;
   }
 }
 /* MOBILE LANDSCAPE */
@@ -168,6 +268,13 @@ blockquote.black-text {
   }
   .reveal blockquote .hashtags {
     font-size:                        44px;
+  }
+  .reveal blockquote.logo {
+    font-size:                        220px;
+  }
+  .reveal blockquote div.logo-tag {
+    font-size:                        36px;
+    line-height:                      1.4;
   }
 }
 /* CELL N/A */
@@ -182,59 +289,6 @@ blockquote.black-text {
   footer#title-footer {
     background-image:                 none;
   }
-}
-@font-face {
- font-family:                        "San Francisco";
- src:                                url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-}
-* {
- font-family:                        -apple-system, 
-                                     system-ui,
-                                     BlinkMacSystemFont,
-                                     Segoe UI,
-                                     Roboto,
-                                     Helvetica Neue,
-                                     Fira Sans,
-                                     Ubuntu,
-                                     Oxygen,
-                                     Oxygen Sans,
-                                     Cantarell,
-                                     Droid Sans,
-                                     Lucida Grande,
-                                     Helvetica,
-                                     "San Francicso",
-                                     sans-serif,
-                                     Apple Color Emoji,
-                                     Segoe UI Emoji,
-                                     Segoe UI Emoji,
-                                     Segoe UI Symbol,
-                                     Hiragino Kaku Gothic Pro,
-                                     Meiryo,
-                                     Hiragino Sans GB W3,
-                                     Noto Naskh Arabic,
-                                     Droid Arabic Naskh,
-                                     Geeza Pro,
-                                     Simplified Arabic,
-                                     Noto Sans Thai,
-                                     Thonburi,
-                                     Dokchampa,
-                                     Droid Sans Thai,
-                                     Droid Sans Fallback,
-                                     Heiti SC,
-                                     Microsoft Yahei, 
-                                     "San Francicso";
- margin:                             0;
- padding:                            0;
-}
-:root {
- --mpg-white:                       rgb(255, 255, 255);
- --mpg-black:                       rgb(0, 0, 0);
- --mpg-red:                         rgb(147, 44, 40);
- --mpg-yellow:                      rgb(249, 208, 6);
- --mpg-blue:                        rgb(12, 84, 149);
- --mpg-gray:                        rgb(239, 239, 239);
- --mpg-mediumgray:                  rgb(188, 190, 192);
- --mpg-darkgray:                    rgb(129, 129, 129);  
 }
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff; }
