@@ -49,7 +49,8 @@
   --mpg-gray:                        rgb(239, 239, 239);
   --mpg-mediumgray:                  rgb(188, 190, 192);
   --mpg-darkgray:                    rgb(129, 129, 129);
-  --mpg-almostblack:                 rgb(48,48,48);  
+  --mpg-almostblack:                 rgb(48,48,48);
+  --mpg-lokt:                        rgb(73,73,73);  
  }
  .reveal blockquote {
   display: block;
